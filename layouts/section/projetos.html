@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  <div class="projects">
+    {{ range .Pages }}
+    <div class="card">
+      <h2><a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a></h2>
+      <p>{{ .Params.description }}</p>
+      {{ if .Params.image }}
+      <img src="{{ .Params.image }}" alt="{{ .Title }}">
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

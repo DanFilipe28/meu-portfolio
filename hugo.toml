@@ -1,0 +1,24 @@
+baseURL = "https://DanFilipe28.github.io/meu-portfolio/"
+languageCode = "en-us"
+title = "Meu Portfólio"
+theme = "blowfish"
+
+[params]
+    author = "Dan Filipe"
+    description = "Descrição do seu portfólio"
+    profilePicture = "images/profile.jpg"
+    githubUsername = "seu-github"
+    linkedinUsername = "seu-linkedin"
+    email = "seu-email@example.com"
+
+[[menu.main]]
+    identifier = "about"
+    name = "Sobre Mim"
+    url = "/sobre-mim/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "projects"
+    name = "Projetos"
+    url = "/projetos/"
+    weight = 2
